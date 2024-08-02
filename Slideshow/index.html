@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Responsive Slideshow</title>
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- Favicon from favicon.cc (https://www.favicon.cc/) -->
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="" alt="Slideshow Images" id="slideImage" />
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+
+      <div class="credits">
+        <p class="credits-text open-sans-text">
+          Photos by
+          <a
+            class="playfair-display-text"
+            href="https://unsplash.com/@timmossholder?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank"
+            >Tim Mossholder</a
+          >
+          &amp;
+          <a
+            class="playfair-display-text"
+            href="https://unsplash.com/@gcasales?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank"
+            >Guillermo Casales</a
+          >
+          on
+          <a
+            class="playfair-display-text"
+            href="https://unsplash.com"
+            target="_blank"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="code.js"></script>
+  </body>
+</html>
