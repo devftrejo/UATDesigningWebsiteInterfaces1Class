@@ -1,0 +1,101 @@
+:root {
+  --custom-darkgray-color: #323232;
+  --custom-lightgray-color: #a9a9a9;
+  --custom-shadeofblack-color: #171717;
+  --custom-shadeofred-color: #fe2020;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #121212;
+  background: linear-gradient(115deg, black, var(--custom-shadeofblack-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 90vmin;
+  height: 90vmin;
+  max-width: 600px;
+  max-height: 600px;
+  border: 5px solid var(--custom-darkgray-color);
+  border-style: outset;
+  box-shadow: 0 0 10px black;
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--custom-darkgray-color);
+}
+
+.piece {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.king {
+  position: relative;
+}
+
+.piece.king::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 50%;
+  border-style: outset;
+  border-color: inherit;
+}
+
+.dark {
+  background-color: var(--custom-darkgray-color);
+}
+
+.light {
+  background-color: var(--custom-lightgray-color);
+}
+
+.red {
+  background-color: red;
+  box-shadow: 0 0 10px black;
+  border-style: outset;
+  border-color: var(--custom-shadeofred-color);
+}
+
+.black {
+  background-color: black;
+  box-shadow: 0 0 10px black;
+  border-style: outset;
+  border-color: var(--custom-shadeofblack-color);
+}
+
+.selected {
+  border: 2px solid cyan;
+}
