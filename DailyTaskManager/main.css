@@ -1,0 +1,140 @@
+/* To debug CSS */
+
+/* * {
+  outline: 1px solid red;
+} */
+
+/* Variables */
+
+:root {
+  --custom-shade-white: #fbfbfc;
+  --custom-shade-light-blue: #8eb8ee;
+  --custom-shade-light-gray: #acb8d4;
+  --custom-shade-light-blue-gray: #95a2d0;
+  --custom-shade-dark-blue: #3d78dc;
+  --custom-shade-black-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Google Fonts */
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--custom-shade-dark-blue);
+  font-size: 30px;
+}
+
+input,
+button,
+ul {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Text Colors */
+
+button {
+  color: var(--custom-shade-dark-blue);
+}
+
+input,
+ul {
+  color: black;
+}
+
+/* General Styles */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--custom-shade-white);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.main-container {
+  background-color: var(--custom-shade-light-gray);
+  border-radius: 5px;
+  box-shadow: 0 0 30px var(--custom-shade-light-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+/* Task Input Field */
+
+#taskInput {
+  width: 280px;
+  padding: 3px;
+  border: 3px solid var(--custom-shade-light-blue-gray);
+  border-style: inset;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Buttons */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  box-shadow: var(--custom-shade-black-box-shadow);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--custom-shade-light-blue-gray);
+  cursor: pointer;
+  width: 120px;
+  margin: 5px 20px;
+}
+
+button:hover {
+  background-color: var(--custom-shade-light-blue);
+  transition: 0.3s;
+}
+
+/* Task List */
+
+#taskListContainer {
+  background-color: var(--custom-shade-white);
+  width: 100%;
+  max-width: 280px;
+  height: 300px;
+  overflow-y: auto;
+  border: none;
+  border-radius: 5px;
+  box-shadow: var(--custom-shade-black-box-shadow);
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 20px 0 30px 0;
+  text-align: center;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
