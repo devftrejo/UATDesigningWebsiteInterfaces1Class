@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Baby Bloom</title>
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- Favicon from favicon.cc (https://www.favicon.cc/) -->
+
+    <!-- Google Fonts -->
+
+    <!-- Comfortaa -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Open Sans -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar">
+      <div class="navbar-logo nav-col">Baby Bloom</div>
+      <ul class="navbar-links">
+        <li><a href="index.html">Activities</a></li>
+        <li><a class="active" href="diary.html">Diary</a></li>
+        <li><a href="growth.html">Growth</a></li>
+      </ul>
+      <div class="nav-col">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+      </div>
+      <div class="nav-col">
+        <div class="dark-mode-toggle">
+          <input
+            type="checkbox"
+            id="darkModeToggle"
+            class="dark-mode-checkbox"
+          />
+          <label for="darkModeToggle" class="dark-mode-label">
+            <div class="dark-mode-ball"></div>
+          </label>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Container -->
+
+    <div class="container">
+      <!-- Input Section -->
+
+      <!-- Diary -->
+
+      <div id="diary" class="input-section">
+        <h2>Add Diary Entry</h2>
+        <textarea id="diaryEntry" placeholder="Enter diary entry"></textarea>
+        <div class="button-container">
+          <button onclick="addDiaryEntry()">Add Entry</button>
+        </div>
+      </div>
+
+      <!-- Display Section -->
+
+      <!-- Diary -->
+
+      <div class="display-section">
+        <h2>Diary Entries</h2>
+        <ul id="diaryList"></ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>&copy; 2024 Baby Bloom</p>
+    </footer>
+
+    <!-- Main JS -->
+
+    <script src="code.js"></script>
+  </body>
+</html>
