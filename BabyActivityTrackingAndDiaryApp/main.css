@@ -338,7 +338,8 @@ body.dark-mode .navbar {
   background-color: #1a2632;
 }
 
-body.dark-mode .navbar-links {
+body.dark-mode .navbar-links,
+body.dark-mode footer {
   background-color: #1a2632;
 }
 
