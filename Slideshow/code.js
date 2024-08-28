@@ -1,10 +1,5 @@
 // Array to hold the image URLs:
-const images = [
-  "./assets/img/tim-mossholder-jtsvyzpGXB8-unsplash.jpg",
-  "./assets/img/guillermo-casales-0XYZpENm5d0-unsplash.jpg",
-  "./assets/img/guillermo-casales-MXtYdifE6ck-unsplash.jpg",
-  "./assets/img/guillermo-casales-Xl4uLu2kd0A-unsplash.jpg",
-];
+const images = [];
 
 // Variable to keep track of the current slide:
 let currentSlide = 0;

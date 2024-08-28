@@ -16,5 +16,8 @@
     - Write 3 different functions to handle the 3 distinct events.
     - Include a for loop and an array.
     - Comment the code.
+- Baby Activity Tracking & Diary App
+  - Objective was to create a final project in HTML, CSS, and JS, that incorporates all of the concepts learned in class. The app uses local storage to persist data until deleted by the user.
+- NOTE: If your a student, feel free to use the code and make any changes as you see fit. You will need to add your own images, I removed them from the repository due to limits imposed by GitHub.
 
 ---
