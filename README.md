@@ -1,8 +1,6 @@
-# cautious-octo-goggles
+# UAT "Designing Website Interfaces" Class Repository
 
-## UAT "Designing Website Interfaces" Class Repository
-
-### Projects:
+## Projects:
 
 - Practice Website
   - Objective was to create a very basic website in HTML, CSS, and JS, to review and practice concepts taught in previous class (Beginning Website Interfaces).
